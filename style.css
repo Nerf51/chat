@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: monospace;
+    margin: 0px;
+    height: 100%;
+}
+
+#section {
+    padding: 30px;
+    min-width: 270px;
+    height: 100%;
+    border-right: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+#section::-webkit-scrollbar,
+#section::-webkit-scrollbar-thumb {
+    width: 26px;
+    border-radius: 13px;
+    background-clip: padding-box;
+    border: 10px solid transparent;
+}
+#section::-webkit-scrollbar-thumb {        
+    box-shadow: inset 0 0 0 10px;
+}
+#section::-webkit-scrollbar-thumb{
+    color: white;
+}
+#section:hover::-webkit-scrollbar-thumb{
+    color: rgba(0, 0, 0, 0.11);
+}
+#chat-container::-webkit-scrollbar,
+#chat-container::-webkit-scrollbar-thumb {
+    width: 26px;
+    border-radius: 13px;
+    background-clip: padding-box;
+    border: 10px solid transparent;
+}
+#chat-container::-webkit-scrollbar-thumb {        
+    box-shadow: inset 0 0 0 10px;
+}
+#chat-container::-webkit-scrollbar-thumb{
+    color: white;
+}
+#chat-container:hover::-webkit-scrollbar-thumb{
+    color: rgba(0, 0, 0, 0.11);
+}
+
+.user {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+.picture {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(43, 255, 0);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+body {
+    display: flex;
+    width: 100vw;
+}
+#chat {
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+form {
+    text-align: center;
+    width: 100%;
+}
+input {
+    height: 30px;
+    width: 90%;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    border: 1px solid black;
+    padding: 10px;
+}
+.message img {
+    width: 40px;
+    height: 40px;
+    border-right: 20px;
+}
+#chat-container {
+    overflow-y: auto;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#name {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+#username {
+    margin: 0;
+    font-size: 17px;
+}
+#message {
+    margin: 0;
+}
