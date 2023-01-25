@@ -1,4 +1,4 @@
-const ws = new WebSocket("ws://178.33.237.158:26904");
+const ws = new WebSocket("wss://178.33.237.158:26904");
 const section = document.getElementById("section");
 const chat = document.getElementById("chat-container");
 let name;
